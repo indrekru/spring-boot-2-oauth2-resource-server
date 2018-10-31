@@ -18,12 +18,12 @@ Docker way:
 
 Server should now be up and running on `http://localhost:8080`.
 
-## Test API with Postman
+## Get an access token with Postman
 
-1. Install postman
-2. Import postman collection from the `project.postman_collection.json` file
+1. Install Postman
+2. Import Postman collection from the `project.postman_collection.json` file
 3. Run the `/oauth/token` POST request and get a access_token.
-4. Change the token value to the access_token in the other requests and all should be working.
+4. Change the token value to the access_token in the other requests and you should get 200 OK responses.
 
 ## Database
 
