@@ -16,7 +16,7 @@ Docker way:
 3. Create a new terminal tab and cd into `bash_scripts` folder, run `./create-tables-add-data.sh` (This will setup all the oauth DB tables)
 4. Run the java project from `Application.java` main method
 
-Server should now be up and running.
+Server should now be up and running on `http://localhost:8080`.
 
 ## Test API with Postman
 
