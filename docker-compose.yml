@@ -1,0 +1,11 @@
+version: '3'
+services:
+  mysql:
+    build: 'docker/mysql'
+    ports:
+    - 13306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: changeme
+      MYSQL_USER: db_user
+      MYSQL_PASSWORD: db_pass
+      MYSQL_DATABASE: project
