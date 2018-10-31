@@ -25,6 +25,10 @@ Server should now be up and running.
 3. Run the `/oauth/token` POST request and get a access_token.
 4. Change the token value to the access_token in the other requests and all should be working.
 
+## Database
+
+It is what it is, mysql 5.7. But it can easily be switched out for Postgres or whatever you need.
+
 ## Password encryption
 
 Spring Security 5 drastically changed the way they store passwords,
