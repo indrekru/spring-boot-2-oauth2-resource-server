@@ -1,6 +1,9 @@
 # Spring Boot 2 Oauth2 resource server example
 
 This is a bare-bones Spring Boot 2 Oauth2 resource server with an authorization server.
+I put this here, cause there was no good example out there on how to do it. 
+
+This is a bootstrap project for all the startups out there who have trouble hiring talent and have to do with low paid students, who crawl stackoverflow all day to hack something together. Do it properly and save a bunch of money!
 
 ## Running
 
