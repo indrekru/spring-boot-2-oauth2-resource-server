@@ -8,7 +8,7 @@ This is a bootstrap project for all the startups out there who have trouble hiri
 ## Running
 
 Here's a way to run it with docker (highly recommended for developing/testing).
-If you wish to run it against your native environment, then just change the `application.properties` file.
+If you wish to run it against your native environment, then just change the `application.properties` file or define your own profile `application-[your-profile].properties`.
 
 Docker way:
 1. Install docker
