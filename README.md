@@ -14,9 +14,8 @@ Docker way:
 1. Install docker
 2. Run the docker container in the root of the project `docker-compose up`
 3. Create a new terminal tab and cd into `bash_scripts` folder, run `./create-tables-add-data.sh` (This will setup all the oauth DB tables)
-4. Install dependencies and build it `mvn clean install`
-5. Run the java project from `Application.java` main method 
-OR run the jar from target directory `java -jar project-0.0.1-SNAPSHOT.jar`
+4. Install dependencies `mvn clean install`
+5. Run it `mvn spring-boot:run`
 
 Server should now be up and running on `http://localhost:8080`.
 
