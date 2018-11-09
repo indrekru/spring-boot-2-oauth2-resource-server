@@ -29,10 +29,3 @@ Server should now be up and running on `http://localhost:8080`.
 ## Database
 
 It is what it is, mysql 5.7. But it can easily be switched out for Postgres or whatever you need.
-
-## Password encryption
-
-Spring Security 5 drastically changed the way they store passwords,
-this project stores all passwords and client_details in BCrypt encryption.
-
-And I think that's great!
