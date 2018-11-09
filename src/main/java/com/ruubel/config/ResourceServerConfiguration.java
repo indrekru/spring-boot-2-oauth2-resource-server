@@ -21,6 +21,7 @@ public class ResourceServerConfiguration extends
         http
                 .authorizeRequests()
                 .antMatchers("/api/v{[0-9]+}/user").hasRole("USER")
-                .anyRequest().permitAll();
+                .anyRequest().authenticated()
+                ;
     }
 }
