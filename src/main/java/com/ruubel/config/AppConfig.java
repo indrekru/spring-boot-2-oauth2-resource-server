@@ -7,12 +7,15 @@ import java.util.TimeZone;
 @Configuration
 public class AppConfig {
 
-	public void configureUTC() {
-		TimeZone.setDefault(TimeZone.getTimeZone("Etc/UTC"));
-	}
+    /**
+     * Make sure everything is stored in UTC in DB
+     */
+    public void configureUTC() {
+        TimeZone.setDefault(TimeZone.getTimeZone("Etc/UTC"));
+    }
 
-	public AppConfig() {
-		configureUTC();
-	}
+    public AppConfig() {
+        configureUTC();
+    }
 
 }

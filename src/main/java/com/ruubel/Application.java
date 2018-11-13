@@ -1,6 +1,8 @@
 package com.ruubel;
 
 import com.ruubel.service.UserService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -10,19 +12,25 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @SpringBootApplication
 public class Application implements CommandLineRunner {
 
-	@Autowired
-	PasswordEncoder passwordEncoder;
+    private final Logger log = LoggerFactory.getLogger(this.getClass());
 
-	@Autowired
-	UserService userService;
+    private PasswordEncoder passwordEncoder;
+    private UserService userService;
 
-	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
-	}
+    @Autowired
+    public Application(PasswordEncoder passwordEncoder, UserService userService) {
+        this.passwordEncoder = passwordEncoder;
+        this.userService = userService;
+    }
 
-	@Override
-	public void run(String... strings) {
+    public static void main(String[] args) {
+        SpringApplication.run(Application.class, args);
+    }
+
+    @Override
+    public void run(String... strings) {
+        log.info("Attempting to create a test user");
 //		System.out.println(passwordEncoder.encode("project_pass"));
-		userService.createUser("email@email.com", "password");
-	}
+        userService.createUser("email@email.com", "password");
+    }
 }

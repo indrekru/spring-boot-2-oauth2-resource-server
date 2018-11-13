@@ -1,8 +1,8 @@
 package com.ruubel.service;
 
-import com.ruubel.repository.UserRepository;
 import com.ruubel.model.Role;
 import com.ruubel.model.User;
+import com.ruubel.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AnonymousAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -17,14 +17,16 @@ public class UserService {
 
     private static String ROLE_USER = "ROLE_USER";
 
-    @Autowired
-    UserRepository userRepository;
+    private UserRepository userRepository;
+    private PasswordEncoder passwordEncoder;
+    private RoleService roleService;
 
     @Autowired
-    PasswordEncoder passwordEncoder;
-
-    @Autowired
-    RoleService roleService;
+    public UserService(UserRepository userRepository, PasswordEncoder passwordEncoder, RoleService roleService) {
+        this.userRepository = userRepository;
+        this.passwordEncoder = passwordEncoder;
+        this.roleService = roleService;
+    }
 
     public User createUser(String email, String password) {
         User user = userRepository.findByEmail(email);

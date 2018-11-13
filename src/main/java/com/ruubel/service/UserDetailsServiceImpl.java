@@ -17,8 +17,12 @@ import java.util.stream.Collectors;
 @Service
 public class UserDetailsServiceImpl implements UserDetailsService {
 
-    @Autowired
     private UserService userService;
+
+    @Autowired
+    public UserDetailsServiceImpl(UserService userService) {
+        this.userService = userService;
+    }
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
@@ -29,10 +33,10 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         }
 
         User user = new User(dbUser.getEmail(), dbUser.getPassword(), dbUser.isActive(),
-                true,true,
+                true, true,
                 true,
                 loadAuthorities(dbUser));
-        return  user;
+        return user;
     }
 
     public Collection<GrantedAuthority> loadAuthorities(com.ruubel.model.User user) {

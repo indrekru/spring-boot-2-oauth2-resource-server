@@ -20,9 +20,9 @@ public class User {
 
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "user_role", joinColumns = {
-            @JoinColumn(name = "fk_user", nullable = false, updatable = false) },
-            inverseJoinColumns = { @JoinColumn(name = "fk_role",
-                    nullable = false, updatable = false) })
+            @JoinColumn(name = "fk_user", nullable = false, updatable = false)},
+            inverseJoinColumns = {@JoinColumn(name = "fk_role",
+                    nullable = false, updatable = false)})
     private List<Role> roles;
 
     private Instant created;

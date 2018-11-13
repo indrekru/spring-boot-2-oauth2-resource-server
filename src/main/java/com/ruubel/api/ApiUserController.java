@@ -16,15 +16,19 @@ import java.util.Map;
 @RequestMapping("/api/v1/user")
 public class ApiUserController {
 
+    private UserService userService;
+
     @Autowired
-    UserService userService;
+    public ApiUserController(UserService userService) {
+        this.userService = userService;
+    }
 
     @GetMapping
     public ResponseEntity<Map<String, Object>> userDetails() {
 
         User currentUser = userService.getCurrentUser();
 
-        Map<String, Object> out = new HashMap<String, Object>(){{
+        Map<String, Object> out = new HashMap<String, Object>() {{
             put("id", currentUser.getId());
             put("email", currentUser.getEmail());
             put("passwordHash", currentUser.getPassword());
