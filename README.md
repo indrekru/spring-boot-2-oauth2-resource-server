@@ -1,4 +1,4 @@
-# Spring Boot 2 Oauth2 resource server example
+# Spring Boot 2 Oauth2 resource server
 
 This is a bare-bones Spring Boot 2 Oauth2 resource server with an authorization server.
 
