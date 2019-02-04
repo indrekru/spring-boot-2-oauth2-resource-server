@@ -1,6 +1,6 @@
-# Spring Boot 2 Oauth2 resource server
+# Spring Boot 2 Oauth2 resource and authorization server
 
-Spring Boot 2 OAuth2 Authorization server implementation with Database for Users and Clients (JPA, Hibernate, MySQL)
+Spring Boot 2 OAuth2 resource and authorization server implementation with Database for Users and Clients (JPA, Hibernate, MySQL)
 
 ## Running
 
