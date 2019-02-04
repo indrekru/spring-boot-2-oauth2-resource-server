@@ -1,6 +1,6 @@
 # Spring Boot 2 Oauth2 resource server
 
-This is a bare-bones Spring Boot 2 Oauth2 resource server with an authorization server.
+Spring Boot 2 OAuth2 Authorization server implementation with Database for Users and Clients (JPA, Hibernate, MySQL)
 
 ## Running
 
