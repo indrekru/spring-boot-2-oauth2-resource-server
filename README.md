@@ -47,7 +47,7 @@ Start docker:
 docker-compose up
 ```
 
-Create a new terminal tab and navigate into `bash_scripts` and run:
+Create a new terminal tab and navigate into `bash_scripts` and run (docker is running, this will create tables and add data):
 ```
 ./create-tables-add-data.sh
 ```
