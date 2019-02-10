@@ -4,7 +4,7 @@ Spring Boot 2 OAuth2 resource and authorization server implementation with Datab
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See running for notes on how to run the project on a system.
 
 ### Prerequisites
 
