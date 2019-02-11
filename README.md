@@ -27,6 +27,9 @@ sudo apt-get install maven
 
 3. You need Docker to be installed:
 
+#### Windows:
+https://download.docker.com/win/stable/Docker%20for%20Windows%20Installer.exe
+
 #### Mac:
 https://download.docker.com/mac/stable/Docker.dmg
 
