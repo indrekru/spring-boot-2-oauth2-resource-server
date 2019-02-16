@@ -1,4 +1,5 @@
-# Spring Boot 2 Oauth2 resource and authorization server [![CircleCI](https://circleci.com/gh/indrekru/spring-boot-2-oauth2-resource-server.svg?style=svg)](https://circleci.com/gh/indrekru/spring-boot-2-oauth2-resource-server) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Check%20out%20Spring%20Boot%202%20Oauth2%20resource%20and%20authorization%20server%20example%20https%3A%2F%2Fgithub.com%2Findrekru%2Fspring-boot-2-oauth2-resource-server)
+# Spring Boot 2 Oauth2 resource and authorization server
+[![CircleCI](https://circleci.com/gh/indrekru/spring-boot-2-oauth2-resource-server.svg?style=svg)](https://circleci.com/gh/indrekru/spring-boot-2-oauth2-resource-server) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Check%20out%20Spring%20Boot%202%20Oauth2%20resource%20and%20authorization%20server%20example%20https%3A%2F%2Fgithub.com%2Findrekru%2Fspring-boot-2-oauth2-resource-server)
 
 Spring Boot 2 OAuth2 resource and authorization server implementation with Database for Users and Clients (JPA, Hibernate, MySQL)
 
