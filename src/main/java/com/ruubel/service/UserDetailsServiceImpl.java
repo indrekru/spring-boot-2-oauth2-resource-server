@@ -2,6 +2,7 @@ package com.ruubel.service;
 
 import com.ruubel.model.Role;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Profile;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;
@@ -15,6 +16,7 @@ import java.util.Collection;
 import java.util.stream.Collectors;
 
 @Service
+@Profile("default")
 public class UserDetailsServiceImpl implements UserDetailsService {
 
     private UserService userService;

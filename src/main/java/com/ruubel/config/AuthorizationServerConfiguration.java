@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
+import org.springframework.context.annotation.Profile;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -22,6 +23,7 @@ import javax.sql.DataSource;
 
 @Configuration
 @EnableAuthorizationServer
+@Profile("default")
 public class AuthorizationServerConfiguration extends AuthorizationServerConfigurerAdapter {
 
     private UserDetailsService userDetailsService;

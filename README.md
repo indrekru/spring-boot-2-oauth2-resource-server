@@ -55,6 +55,13 @@ Create a new terminal tab and navigate into `bash_scripts` and run (docker is ru
 ./create-tables-add-data.sh
 ```
 
+## Testing
+
+Run all tests:
+```
+mvn test
+```
+
 ## Running
 
 Start docker:

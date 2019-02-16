@@ -39,13 +39,12 @@ public class UserService {
         return null;
     }
 
-    public void addRoleToUser(User user, String roleStr) {
+    private void addRoleToUser(User user, String roleStr) {
         Role role = roleService.findByRole(roleStr);
         if (role == null) {
             role = roleService.saveRole(roleStr);
         }
         user.getRoles().add(role);
-        userRepository.save(user);
     }
 
     private String hashPassword(String password) {
