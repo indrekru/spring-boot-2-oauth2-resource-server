@@ -21,7 +21,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post
 
 @SpringBootTest
-@ActiveProfiles(["integration-tests"])
+@ActiveProfiles(["test"])
 class ApiUserControllerIntSpec extends Specification {
 
     @Autowired

@@ -15,7 +15,7 @@ import org.springframework.test.context.ActiveProfiles
 
 @Configuration
 @EnableAuthorizationServer
-@ActiveProfiles("integration-tests")
+@ActiveProfiles("test")
 class AuthorizationTestServer extends AuthorizationServerConfigurerAdapter {
 
     private AuthenticationManager authenticationManager

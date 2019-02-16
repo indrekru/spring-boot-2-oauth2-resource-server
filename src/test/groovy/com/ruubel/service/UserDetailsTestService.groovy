@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service
 import org.springframework.test.context.ActiveProfiles
 
 @Service
-@ActiveProfiles("integration-tests")
+@ActiveProfiles("test")
 class UserDetailsTestService implements UserDetailsService {
 
     @Autowired
