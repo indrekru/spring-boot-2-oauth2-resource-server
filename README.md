@@ -90,6 +90,7 @@ Your server should be now running on http://localhost:8080
 ## Built With
 
 * [Spring Boot](https://spring.io/projects/spring-boot) - Spring Boot 2
+* [Spock](http://spockframework.org/) - Spock testing framework
 * [Maven](https://maven.apache.org/) - Dependency Management
 
 ## Contributing
