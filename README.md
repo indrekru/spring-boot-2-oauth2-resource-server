@@ -10,32 +10,32 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 
 1. Clone the project to your local environment:
-```
-git clone https://github.com/indrekru/spring-boot-2-oauth2-resource-server.git
-```
+    ```
+    git clone https://github.com/indrekru/spring-boot-2-oauth2-resource-server.git
+    ```
 
 2. You need maven installed on your environment:
 
-#### Mac (homebrew):
-
-```
-brew install maven
-```
-#### Ubuntu:
-```
-sudo apt-get install maven
-```
+    #### Mac (homebrew):
+    
+    ```
+    brew install maven
+    ```
+    #### Ubuntu:
+    ```
+    sudo apt-get install maven
+    ```
 
 3. You need Docker to be installed:
 
-#### Windows:
-https://download.docker.com/win/stable/Docker%20for%20Windows%20Installer.exe
-
-#### Mac:
-https://download.docker.com/mac/stable/Docker.dmg
-
-#### Ubuntu:
-https://docs.docker.com/install/linux/docker-ce/ubuntu/
+    #### Windows:
+    https://download.docker.com/win/stable/Docker%20for%20Windows%20Installer.exe
+    
+    #### Mac:
+    https://download.docker.com/mac/stable/Docker.dmg
+    
+    #### Ubuntu:
+    https://docs.docker.com/install/linux/docker-ce/ubuntu/
 
 ### Installing
 
